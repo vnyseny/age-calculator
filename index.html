@@ -6,56 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        body .main {
-            width: fit-content;
-            padding: 100px;
-        }
-
-        body .main .container {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        body .main .container .row {
-            height: 40px;
-            margin-top: 5px;
-            position: relative;
-            width: 250px;
-            /* width: fit-content; */
-        }
-
-        body .main .container .row input {
-            position: absolute;
-            right: 0px;
-        }
-
-        body .main .container .output {
-            margin-top: 10px;
-            width: 250px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        body .main .container .output div {
-            border: 1px solid gray;
-            height: 60px;
-            width: 30%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -68,17 +19,23 @@
             </div>
             <div class="row">
                 <label for="currDate">Date of Check </label>
-                <input type="date" id="currDate">
+                <input type="date" id="checkDate" default>
             </div>
             <button>Calculate</button>
             <div class="output">
-                <div id="day"></div>
-                <div id="month"></div>
+                <span>Years</span>
+                <span>Months</span>
+                <span>Days</span>
+            </div>
+            <div class="output">
                 <div id="year"></div>
+                <div id="month"></div>
+                <div id="day"></div>
             </div>
 
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 
 </html>
